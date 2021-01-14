@@ -1,0 +1,11 @@
+version: '3.3'
+
+services: 
+  web:    
+    container_name: djangotdd
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8080"
+    ports:
+      - "8080:8080"
+    volumes: 
+      - ./code:/code
